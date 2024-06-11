@@ -1,0 +1,75 @@
+/* Reset CSS */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.bg {
+  width: 40%;
+  height: 100vh;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 60%;
+  height: 100vh;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  height: 35%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  border: 2px solid red;
+}
+.card-form {
+  display: flex;
+  
+}
+
+.card-login {
+  display: flex;
+  flex-direction: column;
+  height: 35%;
+}
+
+.card-login button {
+  height: 30px;
+  width: 1000px;
+}
