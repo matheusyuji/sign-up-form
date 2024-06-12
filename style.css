@@ -11,6 +11,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   display: flex;
+  font-family: sans-serif;
 }
 
 img, picture, video, canvas, svg {
@@ -68,7 +69,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .bg-title {
   font-family: "Spicy Rice", serif;
   font-size: 2rem;
-  padding-left: 300px;
+  padding-left: 45%;
   color: var(--title-color);
 }
 
@@ -87,11 +88,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .form-group {
-  background-color: var(--form-color);
+  background-image: linear-gradient(to bottom, var(--form-color) 50%, var(--header-color) 50%);
   display: flex;
   flex-direction: column;
-  height: 30%;
+  height: 65%;
   padding-left: 20px;
+  width: 100%;
 }
 
 .form-group h3 {
@@ -115,17 +117,8 @@ form {
 }
 
 .card-login {
-  background-color: var(--header-color);
-  display: flex;
-  flex-direction: column;
-  height: 35%;
-  padding-left: 160px;
-  padding-top: 30px;
-}
-
-.card-login button {
-  height: 50px;
-  width: 200px;
+  padding-left: 10%;
+  padding-top: 15%;
 }
 
 button {
@@ -136,6 +129,8 @@ button {
   color: black;
   transition-duration: 0.4s;
   text-align: center;
+  height: 50px;
+  width: 200px;
 }
 
 button:hover {
