@@ -9,7 +9,6 @@
 }
 
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   display: flex;
 }
@@ -31,6 +30,23 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/*     */
+
+:root {
+  --bg-color: #565656;
+  --form-color: #d7cec7;
+  --text-form-color: #3f3e3e;
+  --header-color: #ecdac7;
+  --btn-color: #76323f;
+}
+
+.spicy-rice-regular {
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .bg {
   width: 40%;
   height: 100vh;
@@ -46,24 +62,44 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .card-header {
+  background-color: var(--header-color);
   display: flex;
   flex-direction: column;
   padding: 5rem;
   height: 35%;
+  line-height: 1,1;
 }
 
 .form-group {
+  background-color: var(--form-color);
   display: flex;
   flex-direction: column;
   height: 30%;
-  border: 2px solid red;
+  padding-left: 20px;
 }
+
+.form-group h3 {
+  padding-top: 20px;
+}
+
 .card-form {
   display: flex;
-  
+}
+
+.card-form form:first-of-type {
+  padding-right: 60px;
+}
+
+label {
+  display: block;
+}
+
+form {
+  padding-top: 25px;
 }
 
 .card-login {
+  background-color: var(--header-color);
   display: flex;
   flex-direction: column;
   height: 35%;
