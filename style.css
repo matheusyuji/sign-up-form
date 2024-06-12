@@ -87,24 +87,37 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 1,1;
 }
 
+.card-header h3 {
+  padding-top: 40px;
+}
+
 .form-group {
-  background-image: linear-gradient(to bottom, var(--form-color) 50%, var(--header-color) 50%);
+  background-image: linear-gradient(to bottom, var(--form-color) 60%, var(--header-color) 40%);
   display: flex;
   flex-direction: column;
   height: 65%;
   padding-left: 20px;
   width: 100%;
+  align-items: center;
 }
 
-.form-group h3 {
-  padding-top: 20px;
+.card-form div input {
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  width: 20vw;
+  height: 4vh;
+}
+
+.card-form div span {
+  color:  #96283c;
 }
 
 .card-form {
   display: flex;
+  padding-top: 20px;
 }
 
-.card-form form:first-of-type {
+.card-form div:first-of-type {
   padding-right: 60px;
 }
 
@@ -117,7 +130,6 @@ form {
 }
 
 .card-login {
-  padding-left: 10%;
   padding-top: 15%;
 }
 

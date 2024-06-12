@@ -12,7 +12,7 @@
 <body>
   <div class="bg">
     <div class="bg-card">
-      <p class="bg-title">MYM</p>
+      <h1 class="bg-title">MYM</h1>
     </div>
   </div>
 
@@ -26,10 +26,9 @@
     </div>
 
     <form class="form-group">
-      <h3>Let's do this!</h3>
       <div class="card-form">
         <div>
-          <label for="first-name">First Name</label>
+          <label for="first-name"><span aria-label="required">*</span>First Name</label>
           <input type="text" id="first-name" name="first-name" required>
         </div>
         <div>
@@ -40,7 +39,7 @@
   
       <div class="card-form">
         <div>
-          <label for="email">Email</label>
+          <label for="email"><span aria-label="required">*</span>Email</label>
           <input type="email" id="email" name="email" required>
         </div>
         <div>
@@ -51,12 +50,12 @@
   
       <div class="card-form">
         <div>
-          <label for="pwd">Password</label>
-          <input type="password" id="pwd" name="password" required>
+          <label for="pwd"><span aria-label="required">*</span>Password</label>
+          <input type="password" id="pwd" name="password" minlength="8" required>
         </div>
         <div>
-          <label for="confirm-pwd">Confirm Password</label>
-          <input type="password" id="confirm-pwd" name="confirm-password" required>
+          <label for="confirm-pwd"><span aria-label="required">*</span>Confirm Password</label>
+          <input type="password" id="confirm-pwd" name="confirm-password" minlength="8" required>
         </div>
       </div>
     
@@ -64,7 +63,6 @@
         <button type="submit">Create Account</button>
         <p>Already have an account? <a href="" class="login">Log in</a></p>
       </div>
-      
     </form>
 </body>
 </html>
