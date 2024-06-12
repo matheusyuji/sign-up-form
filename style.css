@@ -23,7 +23,7 @@ input, button, textarea, select {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+  overflow:hidden;
 }
 
 #root, #__next {
@@ -39,6 +39,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --header-color: #ecdac7;
   --btn-color: #76323f;
   --btn-text-color: #c09f80;
+  --title-color: #f3a774;
 }
 
 .spicy-rice-regular {
@@ -47,7 +48,6 @@ p, h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
-
 .bg {
   width: 40%;
   height: 100vh;
@@ -55,6 +55,21 @@ p, h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 200px;
+}
+
+.bg-card {
+  display: flex;
+  background-color: var(--bg-color);
+  opacity: 50%;
+  padding:30px;
+}
+
+.bg-title {
+  font-family: "Spicy Rice", serif;
+  font-size: 2rem;
+  padding-left: 300px;
+  color: var(--title-color);
 }
 
 .card {
